@@ -1,0 +1,77 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif;
+  background: #1b1d22;
+  color: #e8e8ea;
+  margin: 0;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  max-width: 520px;
+}
+
+h1 {
+  margin: 0 0 4px 0;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.hint {
+  margin: 0 0 18px 0;
+  color: #9aa0a8;
+  font-size: 13px;
+}
+
+.board {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  aspect-ratio: 1 / 1;
+  background: #2a2d34;
+  border: 1px solid #353941;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.card.flipped {
+  background: #3a4250;
+  color: #e8e8ea;
+}
+
+.card.matched {
+  background: #2f4a3a;
+  color: #cfe8d6;
+  cursor: default;
+}
+
+button {
+  background: #3a4250;
+  color: #e8e8ea;
+  border: 1px solid #4a5260;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover { background: #444c5a; }
