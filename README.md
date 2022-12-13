@@ -18,6 +18,8 @@ or serve it with anything (`python3 -m http.server`) if your browser is grumpy a
 
 - 4x4 grid by default (8 pairs)
 - click two cards, match keeps them open, miss flips both back
+- timer counts up from the first click, move counter ticks once per pair tried
+- proper Fisher-Yates shuffle, the `.sort(()=>Math.random()-0.5)` trick is biased
 
 ## license
 
