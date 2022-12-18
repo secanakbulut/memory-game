@@ -12,7 +12,7 @@ body {
 
 main {
   width: 100%;
-  max-width: 520px;
+  max-width: 560px;
 }
 
 h1 {
@@ -26,6 +26,25 @@ h1 {
   margin: 0 0 14px 0;
   color: #9aa0a8;
   font-size: 13px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: #9aa0a8;
+}
+
+.controls select {
+  background: #2a2d34;
+  color: #e8e8ea;
+  border: 1px solid #3a4250;
+  border-radius: 4px;
+  padding: 4px 6px;
+  font: inherit;
+  margin-left: 6px;
 }
 
 .stats {
@@ -49,9 +68,8 @@ h1 {
   margin-bottom: 16px;
 }
 
-.grid-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-6 { grid-template-columns: repeat(6, 1fr); gap: 6px; }
 
 .card {
   aspect-ratio: 1 / 1;
@@ -66,7 +84,10 @@ h1 {
   color: transparent;
   cursor: pointer;
   user-select: none;
+  transition: background 120ms;
 }
+
+.grid-6 .card { font-size: 14px; }
 
 .card.flipped {
   background: #3a4250;
@@ -83,10 +104,18 @@ button {
   background: #3a4250;
   color: #e8e8ea;
   border: 1px solid #4a5260;
-  padding: 8px 14px;
+  padding: 6px 12px;
   border-radius: 4px;
   font: inherit;
   cursor: pointer;
 }
 
 button:hover { background: #444c5a; }
+
+.done {
+  margin: 0;
+  font-size: 13px;
+  color: #cfe8d6;
+}
+
+.done.new-best { color: #f0d27a; }

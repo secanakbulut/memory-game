@@ -11,14 +11,26 @@
     <h1>memory</h1>
     <p class="hint">click two cards. match the pair.</p>
 
+    <div class="controls">
+      <label>
+        size
+        <select id="size">
+          <option value="4">4x4 (8 pairs)</option>
+          <option value="6">6x6 (18 pairs)</option>
+        </select>
+      </label>
+      <button id="reset" type="button">new game</button>
+    </div>
+
     <div class="stats">
       <span>time <b id="time">00:00</b></span>
       <span>moves <b id="moves">0</b></span>
+      <span>best <b id="best">--:--</b></span>
     </div>
 
     <div id="board" class="board grid-4"></div>
 
-    <button id="reset" type="button">new game</button>
+    <p id="done" class="done" hidden></p>
   </main>
 
   <script src="app.js"></script>
