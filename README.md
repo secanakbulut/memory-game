@@ -1,5 +1,7 @@
 # memory-game
 
+![](docs/screenshot.png)
+
 small concentration game. click two cards, match the pair. built one weekend in december, then came back a few days later to add the bigger grid and best-time tracking.
 
 ## how to run it
